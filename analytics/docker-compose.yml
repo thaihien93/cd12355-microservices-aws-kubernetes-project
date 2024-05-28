@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  analytics-app:
+    image: test-coworking-analytics
+    restart: unless-stopped
+    ports:
+      - "5153:5153"
+    network_mode: "host"
+    environment:
+      DB_USERNAME: myuser
+      DB_PASSWORD: mypassword
+      DB_HOST: localhost
+      DB_PORT: 5433
+      DB_NAME: mydatabase
