@@ -1,6 +1,6 @@
 FROM public.ecr.aws/docker/library/python:3.11-slim
 
-WORKDIR /var/www/html/app
+WORKDIR /usr/src/app
 
 COPY . .
 
