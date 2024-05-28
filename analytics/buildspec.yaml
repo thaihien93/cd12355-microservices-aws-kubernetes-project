@@ -10,8 +10,8 @@ phases:
       - echo Build Docker image...
       - cd analytics
       - docker build -t coworking .
-      - docker tag coworking:latest 498794313379.dkr.ecr.us-east-1.amazonaws.com/coworking:$CODEBUILD_BUILD_NUMBER
+      - docker tag coworking:latest 498794313379.dkr.ecr.us-east-1.amazonaws.com/hient4-coworking:$CODEBUILD_BUILD_NUMBER
   post_build:
     commands:
       - echo Push the image to your Amazon ECR account...
-      - docker push 498794313379.dkr.ecr.us-east-1.amazonaws.com/coworking:$CODEBUILD_BUILD_NUMBER
+      - docker push 498794313379.dkr.ecr.us-east-1.amazonaws.com/hient4-coworking:$CODEBUILD_BUILD_NUMBER
