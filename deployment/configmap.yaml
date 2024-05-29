@@ -14,4 +14,4 @@ metadata:
   name: udacity-secret
 type: Opaque
 data:
-  DB_PASSWORD: aGllbnQ0QGZzb2Z0 # hient4@fsoft
+  DB_PASSWORD: aGllbnQ0 # hient4
