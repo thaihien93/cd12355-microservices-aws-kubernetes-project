@@ -11,4 +11,4 @@ COPY . .
 
 EXPOSE 5153
 
-CMD [ "python", "./app.py" ]
+CMD [ "python3", "app.py" ]
