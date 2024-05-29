@@ -1,3 +1,5 @@
+#!/bin/bash
+
 FROM public.ecr.aws/docker/library/python:3.11-slim
 
 WORKDIR /usr/src/app
@@ -11,4 +13,4 @@ COPY . .
 
 EXPOSE 5153
 
-CMD [ "python3", "app.py" ]
+CMD [ "python", "./app.py" ]
